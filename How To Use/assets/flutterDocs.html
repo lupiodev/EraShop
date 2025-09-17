@@ -1,0 +1,449 @@
+<!-- Change App Name (Android) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>EraShop - Documentation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="theme-style" rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+    />
+
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "../../../connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "2223805407931076");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2223805407931076&amp;ev=PageView&amp;noscript=1"
+    /></noscript>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-88404643-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-88404643-1");
+    </script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="menu-bar sidenav-menubar">
+        <div class="menubar-icon">
+          <span class="first-line"></span>
+          <span class="middle-line"></span>
+          <span class="last-line"></span>
+        </div>
+      </div>
+      <div class="sidebar-top">
+        <div class="brand-logo">
+          <a href="">
+            <img
+              src="./eralogo.png"
+              class="me-2"
+              style="margin-right: 20px"
+              alt=""
+            />
+            <h2 class="ms-2 logoText" style="color: #ca4a76">EraShop</h2>
+          </a>
+        </div>
+      </div>
+      <div class="sidenav">
+        <div
+          class="doc-sidebar col-md-2 col-12 order-0 d-none d-md-flex position-fixed"
+          style="left: 0"
+        >
+          <div id="doc-nav" class="doc-nav">
+            <nav id="doc-menu" class="doc-menu sticky">
+              <a class="nav-link scrollto" href="#Introduction">
+                Introduction</a
+              >
+              <a class="nav-link scrollto" href="#splashScreen">
+                Splash Screen</a
+              >
+              <a class="nav-link scrollto" href="#feed">Feed​</a>
+              <a class="nav-link scrollto" href="#pruduct-detail"
+                >Product Detail Screen​</a
+              >
+
+              <a class="nav-link scrollto" href="#live-seller">
+                Live seller Screen</a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <section class="page-head">
+        <div class="menu-bar">
+          <div class="menu-bar-icon">
+            <span class="first-line"></span>
+            <span class="middle-line"></span>
+            <span class="last-line"></span>
+          </div>
+        </div>
+        <div class="page-head-inner">
+          <div class="content-tabs">
+            <div class="brand-logo logo-md">
+              <a href="">
+                <img
+                  src="./eralogo.png"
+                  class="me-2"
+                  style="margin-right: 20px"
+                  alt=""
+                />
+                <h2 class="ms-2 logoText" style="color: #e60a57">EraShop</h2>
+              </a>
+            </div>
+            <ul
+              class="nav nav-tabs justify-content-end"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <a href="../index.html" class="nav-link">Admin Panel</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="./flutterDocs.html" class="nav-link current"
+                  >User App</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="./SellerApp.html" class="nav-link">Seller App</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="content-inner">
+      <section id="Introduction">
+        <div class="doc-section">
+          <h2 class="section-title">Introduction</h2>
+          <div class="list-section">
+            <ul class="mb-0">
+              <li class="lead">
+                Hey there, This is for EraShop app documentation to know the app
+                in better way and how to use it.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="splashScreen">
+        <div class="doc-section">
+          <h2 class="section-title">Splash Screen</h2>
+          <div class="list-section">
+            <ul class="display-table">
+              <li>
+                This is EraShop app splash screen.When user successfully login
+                to app redirects to this page by default.
+              </li>
+              <li>Below is the screen.</li>
+              <li>You can view own name at the top left corner.</li>
+              <li>
+                All live seller with their name ,image ,new collection
+                product,shorts can be seen with searching in this screen.
+              </li>
+            </ul>
+          </div>
+          <img src="./images/4.png" class="mt-3 img-app" alt="" />
+        </div>
+      </section>
+
+      <section id="feed">
+        <div class="doc-section">
+          <h2 class="section-title">Feed</h2>
+          <div class="list-section">
+            <ul class="display-table">
+              <li>
+                By clicking on second icon in bottom navbar, product and Live
+                seller feed screen opens.
+              </li>
+              <li>
+                The presence of a search bar indicates the ability to search for
+                specific products.
+              </li>
+              <li>
+                The categories listed under "live selling" suggest that users
+                can browse products by category.
+              </li>
+              <img src="./images/5.png" class="mt-3 img-app" alt="" />
+
+              <li>
+                By clicking on third icon in bottom navbar, reels feed screen
+                opens.
+              </li>
+              <li>User can like and share the reel.</li>
+              <li>Users can purchase products directly with in the app.</li>
+              <li>
+                Users can add items to a shopping cart and then proceed to
+                checkout to complete their purchase.
+              </li>
+
+              <img src="./images/6.png" class="mt-3 img-app" alt="" />
+
+              <li>
+                By clicking on fourth icon in bottom navbar, cart feed screen
+                opens.
+              </li>
+              <li>User can shown our add to cart products.</li>
+              <li>
+                There is a button labeled "checkout" which likely allows users
+                to proceed to the checkout process to complete their purchase.
+              </li>
+              <img src="./images/7.png" class="mt-3 img-app" alt="" />
+              <li>When enter mobile number and click on Get OTP.</li>
+              <img src="./images/16.png" class="mt-3 img-app" alt="" />
+              <li>Applied coupon code and get discount for our order.</li>
+              <img src="./images/19.png" class="mt-3 img-app" alt="" />
+              <li>Then click to pay now and to proceed to order payment.</li>
+              <img src="./images/20.png" class="mt-3 img-app" alt="" />
+              <li>
+                By clicking on second icon in bottom navbar, user feed screen
+                opens.
+              </li>
+              <li>To edit profile click on top right corner edit button.</li>
+              <li>
+                Some sections, like "my address" and "change password" likely
+                allow users to update their account information. We can't tell
+                from this image if all sections are editable.
+              </li>
+              <li>
+                There is a section titled "my favorite" which suggests users can
+                manage a list of favorite items.
+              </li>
+              <img src="./images/8.png" class="mt-3 img-app" alt="" />
+              <li>First click on my order and see my order screen.</li>
+              <img src="./images/22.png" class="mt-3 img-app" alt="" />
+              <li>Click on view detail and shown order details.</li>
+              <img src="./images/47.png" class="mt-3 img-app" alt="" />
+              <li>Click to cancel order and cancel order.</li>
+              <img src="./images/48.png" class="mt-3 img-app" alt="" />
+
+              <li>click on my address and see my address screen.</li>
+              <img src="./images/18.png" class="mt-3 img-app" alt="" />
+              <li>click on top right corner and add multiple address.</li>
+              <img src="./images/17.png" class="mt-3 img-app" alt="" />
+              <li>Click on my favorite and see user can liked products.</li>
+              <img src="./images/23.png" class="mt-3 img-app" alt="" />
+              <li>
+                Forth option is for change password and user can change
+                password.
+              </li>
+              <img src="./images/24.png" class="mt-3 img-app" alt="" />
+              <li>click on langauge option and user can change language.</li>
+              <img src="./images/25.png" class="mt-3 img-app" alt="" />
+              <li>
+                click on legal & policies option and user can show policies.
+              </li>
+              <img src="./images/26.png" class="mt-3 img-app" alt="" />
+              <li>
+                Click on help & support option and user can show help & support.
+              </li>
+
+              <img src="./images/29.png" class="mt-3 img-app" alt="" />
+              <li>
+                Handle switch dark mode and change to our app background color.
+              </li>
+              <img src="./images/30.png" class="mt-3 img-app" alt="" />
+              <li>
+                In home page user can view notification by click on notification
+                button.
+              </li>
+              <li>
+                At home page user can search to find users , product , sellers
+                etc..
+              </li>
+              <img src="./images/feed.png" class="mt-3 img-app" alt="" />
+              <img src="./images/9.png" class="mt-3 img-app" alt="" />
+              <img src="./images/10.png" class="mt-3 img-app" alt="" />
+              <img src="./images/11.png" class="mt-3 img-app" alt="" />
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="pruduct-detail">
+        <div class="doc-section">
+          <h2 class="section-title">Product Detail Screen​</h2>
+          <div class="list-section">
+            <ul class="display-table">
+              <li>To view product details click on any product.</li>
+              <li>user can select <b>sizes,colors</b> and product to cart.</li>
+              <img src="./images/12.png" class="mt-3 img-app" alt="" />
+              <img src="./images/13.png" class="mt-3 img-app" alt="" />
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="live-seller" class="doc-section">
+        <div class="doc-section">
+          <h2 class="section-title">Live seller Screen​</h2>
+
+          <div class="list-section">
+            <ul class="display-table">
+              <li>
+                In home page see live seller section by click on live seller.
+              </li>
+              <img src="./images/14.png" class="mt-3 img-app" alt="" />
+              <li>User can comment and like live streaming in this page.</li>
+              <li>Here user can see all product of the seller.</li>
+              <img src="./images/15.png" class="mt-3 img-app" alt="" />
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="./plugins/jquery-3.3.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./plugins/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="./plugins/prism/prism.js"></script>
+    <script
+      type="text/javascript"
+      src="./plugins/jquery-scrollTo/jquery.scrollTo.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./plugins/stickyfill/dist/stickyfill.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    >
+
+    <script>
+      const closes = () => {
+        $(".openImages").removeClass("fadeIn_");
+        $(".openImages").addClass("fadeOut_");
+      };
+
+      // Open Image
+      var g = document.getElementsByClassName("myImage");
+      for (var i = 0, len = g.length; i < len; i++) {
+        (function (idx) {
+          g[i].onclick = function () {
+            if (idx == parseInt(g.length) - 1) {
+              $("#next").addClass("d-none");
+            }
+            if (idx == 0) {
+              $("#pre").addClass("d-none");
+            }
+
+            $("#next").attr("data-num1", idx);
+            $("#pre").attr("data-num2", idx);
+
+            $(".openImages").toggleClass("fadeIn_ fadeOut_");
+            document.getElementById("showImg").src = g[idx].src;
+          };
+        })(i);
+      }
+      // Image Change Next
+      const next = () => {
+        var a = $("#next").attr("data-num1");
+
+        const num = parseInt(a) + parseInt(1);
+        $("#next").attr("data-num1", num);
+        $("#pre").attr("data-num2", num);
+        $("#pre").removeClass("d-none");
+
+        if (num == parseInt(g.length) - 1) {
+          $("#next").addClass("d-none");
+        }
+
+        document.getElementById("showImg").src = g[num].src;
+
+        $("#mainPage").addClass(" animate__animated animate__fadeInRight");
+        setTimeout(() => {
+          $("#mainPage").removeClass(" animate__animated animate__fadeInRight");
+        }, 300);
+      };
+
+      // Image Change Previous
+      const pre = () => {
+        var a = $("#pre").attr("data-num2");
+
+        const num = parseInt(a) - parseInt(1);
+        $("#next").attr("data-num1", num);
+        $("#pre").attr("data-num2", num);
+        $("#next").removeClass("d-none");
+
+        if (num == -1 || num == 0) {
+          $("#pre").addClass("d-none");
+        }
+
+        document.getElementById("showImg").src = g[num].src;
+
+        $("#mainPage").addClass(" animate__animated animate__fadeInLeft");
+        setTimeout(() => {
+          $("#mainPage").removeClass(" animate__animated animate__fadeInLeft");
+        }, 300);
+      };
+
+      document.onkeydown = function (event) {
+        if (event.key == "ArrowRight") {
+          var a = $("#next").attr("data-num1");
+          const num = parseInt(a) + parseInt(1);
+          if (num != parseInt(g.length)) {
+            next();
+          }
+        } else if (event.key == "ArrowLeft") {
+          var a = $("#next").attr("data-num1");
+          const num = parseInt(a) + parseInt(1);
+          if (num != 1) {
+            pre();
+          }
+        } else if (event.key == "Escape") {
+          closes();
+        }
+      };
+    </script>
+  </body>
+</html>

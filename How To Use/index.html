@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>EraShop - Documentation</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+	<script></script>
+	<link
+		href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+		rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'../../../connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '2223805407931076');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=2223805407931076&amp;ev=PageView&amp;noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88404643-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-88404643-1');
+	</script>
+
+</head>
+
+<body>
+	<nav>
+		<div class="menu-bar sidenav-menubar">
+			<div class="menubar-icon">
+				
+				<span class="first-line"></span>
+				<span class="middle-line"></span>
+				<span class="last-line"></span>
+			</div>
+		</div>
+		<div class="sidebar-top">
+			<div class="brand-logo">
+				<a href="">
+					<img src="./img/eraLogo.png" class="me-2" style="margin-right: 20px;" alt="">
+					<h2 class="ms-2 logoText" style="color: #CA4A76 ;">EraShop</h2>
+				</a>
+			</div>
+		</div>
+		<div class="sidenav">
+			<div class="doc-sidebar col-md-2 col-12 order-0 d-none d-md-flex position-fixed" style="left:0;">
+
+				<div id="doc-nav" class="doc-nav">
+
+					<nav id="doc-menu" class=" doc-menu sticky">
+						
+
+						<a class="nav-link scrollto " href="#introduction">Introduction</a>
+
+						<a class="nav-link scrollto " href="#dashboard">Dashboard</a>
+						
+
+						<a class="nav-link scrollto " href="#Attributes">Attributes
+						</a>
+						<a class="nav-link scrollto " href="#category">Category & Sub Category</a>
+						<a class="nav-link scrollto " href="#promocode">Promocode</a>
+						
+
+						<a class="nav-link scrollto " href="#Productrequest">Product request</a>
+						<a class="nav-link scrollto " href="#product">Products</a>
+						<a class="nav-link scrollto " href="#reels">Reels</a>
+						<a class="nav-link scrollto " href="#orders">Orders</a>
+						<a class="nav-link scrollto " href="#live-seller">Live Seller</a>
+						<a class="nav-link scrollto " href="#seller">Seller</a>
+						<a class="nav-link scrollto " href="#user">User</a>
+						<a class="nav-link scrollto " href="#seller-withdraw">Seller Withdraw</a>
+						<a class="nav-link scrollto " href="#admin-wallet">Admin Wallet</a>
+						<a class="nav-link scrollto " href="#setting">Setting</a>
+						<a class="nav-link scrollto " href="#faq">FAQ</a>
+						<a class="nav-link scrollto " href="#profile">Profile</a>
+						<a class="nav-link scrollto " href="#notification">Notification</a>
+					</nav>
+
+				</div>
+			</div>
+		</div>
+	</nav>
+	<header class="header">
+		<section class="page-head">
+			<div class="menu-bar">
+				<div class="menu-bar-icon">
+					<span class="first-line"></span>
+					<span class="middle-line"></span>
+					<span class="last-line"></span>
+				</div>
+			</div>
+			<div class="page-head-inner">
+				<div class="content-tabs ">
+					<div class="brand-logo logo-md">
+						<a href="">
+							<img src="./img/eraLogo.png" class="me-2" style="margin-right: 20px;" alt="">
+							<h2 class="ms-2 logoText" style="color: #CA4A76 ;">EraShop</h2>
+						</a>
+					</div>
+					<ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<a href="./index.html" class="nav-link current">Admin Panel</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a href="./assets/flutterDocs.html" class="nav-link ">User App</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a href="./assets/SellerApp.html" class="nav-link ">Seller App</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</header>
+
+	<main class="content-inner">
+		<section id="introduction" class="doc-section">
+			<h2 class="section-title">Introduction</h2>
+			<div class="list-section">
+
+				<ul class="mb-0">
+					<li class="lead">Hey there,This is documentation for admin to know the functionalities in better way for the admin panel by author.</li></ul>
+			
+			</div>
+		</section>
+<!-- ---------------------------------dashboard------------------------------ -->
+		<section id="dashboard" class="doc-section">
+			<h2 class="section-title">Dashboard</h2>
+			<div class="list-section">
+
+				<ul class="mb-0">
+					<li class="lead">This is a dashboard. Admin can select a date range to view data for a specific period is shown as per below image.</li>
+					<li>The dashboard shows various functionalities related to product management, order management, user management, and seller management.</li>
+				</ul>
+				<img src="assets/images/1-Admin.png" class="img-border w-50" alt="">
+			</div>
+			</div>
+		</section>
+<!-- ---------------------------------Attributes------------------------------ -->
+
+		<section id="Attributes" class="doc-section">
+			<h2 class="section-title">Attributes</h2>
+			<div class="section-block">
+
+				<div class="list-section">
+					<ul class="pl-0">
+						<li class="lead">
+							In this section admin can view current attribute , add new attribute with edit and delete options.
+						</li>
+						<li class="lead">Overall, the attributes page description helps you understand the different characteristics (attributes) used to classify products or items in the EraShop system.</li>
+					</ul>
+				</div>
+				</p>
+				
+				<img src="assets/images/2-Admin.png" class="img-border" alt="">
+
+		</section>
+
+
+<!-- ---------------------------------Category------------------------------ -->
+
+
+		<section id="category" class="doc-section">
+			<h2 class="section-title"> Category & Sub Category </h2>
+			<div class="section-block">
+				<div class="list-section">
+					<ul>
+						<li class="lead">
+							The category page description helps you understand the list of category. By using the filters, buttons, and other information provided, you can efficiently add , view , delete and modify category information.
+						</li>
+						
+					</ul>
+				</div>
+				<img width="876" height="493" src="assets/images/3-Admin.png" class="img-border" />
+				<div class="list-section">
+					<ul>
+						<li class="lead">
+							Click info and open sub category page.
+						</li>
+						<li class="lead">The sub category page description helps you understand the list of category wise sub category. By using the filters, buttons, and other information provided, you can efficiently add , view , delete and modify sub category information.</li>
+					</ul>
+
+				</div>
+				<img width="876" height="493" src="assets/images/4-Admin.png" class="img-border" />
+
+			</div>
+		</section>
+
+
+		<!-- ---------------------------------Promocode------------------------------ -->
+
+
+
+		<section id="promocode" class="doc-section">
+			<h2 class="section-title"> Promocode
+			</h2>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						In this promocode section ,The EraShop promocode allows you to add, update, view, and delete promocode information..
+					</li>
+					
+				</ul>
+				
+				<img width="876" height="493" src="assets/images/5-Admin.png" class="img-border" />
+
+
+			</div>
+
+		</section>
+
+
+		<!-- ---------------------------------p request------------------------------ -->
+
+
+
+		<section id="Productrequest" class="doc-section">
+
+			<h2 class="section-title">product request
+			</h2>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						In this pending product request section , The EraShop pending product request section allows accept and decline sellers to submit requests for new products and update products..
+					</li>
+					<li class="lead">The EraShop pending product request seems to be a tool for viewing and searching  pending product request.</li>
+					
+				</ul>
+			</div>
+			<img src="assets/images/6-Admin.png" class="img-border" alt="">
+			<div class="list-section">
+				<ul>
+					
+					<li class="lead">In this approved product request section , The EraShop approved product request section view and allows search for new products and update products..</li>
+				</ul>
+			</div>
+			<img src="assets/images/7-Admin.png" class="img-border" alt="">
+			<div class="list-section">
+				<ul>
+					
+					<li class="lead">In this rejected product request section , The EraShop rejected product request section view and allows search for new products and update products..</li>
+				</ul>
+			</div>
+			<img src="assets/images/rejected.png" class="img-border" alt="">
+
+		</section>
+
+		<section id="product">
+
+			<h4 class="section-title">Real Or Fake products</h4>
+
+			<div>
+				<div class="list-section">
+					<ul>
+						<li class="lead">
+							In this section a real product page functionality allows to view , modify and delete with searching for a real product.
+						</li>
+						<li class="lead">Admin can also handle <b>new collection</b> and <b>out of stock</b> switch for a real products.</li>
+
+					</ul>
+				</div>
+
+				<img src="assets/images/8-Admin.png" class="img-border" />
+				<div class="list-section">
+					<ul>
+
+
+						<li class="lead">
+							In this section a fake product page functionality allows to add , view , modify and delete with searching for a fake product.
+						</li>
+						<li class="lead">Admin can also handle <b>new collection</b> and <b>out of stock</b> switch for a fake products.</li>
+						
+
+					
+					</ul>
+				</div>
+				<img src="assets/images/9-Admin.png" class="img-border" alt="">
+
+				<div class="list-section">
+					<ul>
+						<li class="lead">Click on the "Info" button (i)  to view a product detail page with more details about the product without leaving the current list.</li>
+					</ul>
+				</div>
+				<img src="assets/images/10-Admin.png" />
+				
+			</div>
+		</section>
+
+		<section id="reels">
+			<h4 class="section-title">Real Or Fake Reels</h4>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						In this section a real reels page functionality allows to view , modify and delete with searching for a real reels.
+					</li>
+					<img src="assets/images/11-Admin.png" class="img-border" />
+
+					<li class="lead">
+						In this section a fake reels page functionality allows to add , view , modify and delete with searching for a fake reels.
+					</li>
+
+					<img src="assets/images/13-Admin.png" class="img-border" />
+
+					<li class="lead">Click on the "Info" button (i)  to view a reel detail page with likes , commets and more details about the reels without leaving the current list.</li>
+					
+					<img src="assets/images/14-Admin.png" alt="" class="img-border">
+
+					
+				</ul>
+			</div>
+
+		
+		</section>
+		
+		<section id="orders">
+			<h4 class="section-title">Order</h4>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						In this section a order page functionality allows  modify order status with searching for a order.
+					</li>
+					<img src="assets/images/15-Admin.png" class="img-border" />
+
+					<li class="lead">
+						When click on <b>orderId</b> it redirect to <b>order detail</b> page with order amount , discount , promocode and delivery address etc...
+					</li>
+
+					<img src="assets/images/16-Admin.png" class="img-border" />
+
+					
+
+					
+				</ul>
+			</div>
+
+		
+		</section>
+
+		<section id="live-seller">
+			<h4 class="section-title">Live Seller</h4>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						In this section a live seller page functionality admin can view all <b>live seller</b>
+					</li>
+					<li class="lead">However, the ability to view seller products seems to be restricted. You can only view products if the seller is designated as a "Real Live Seller" in the system.</li>
+					<img src="assets/images/17-Admin.png" class="img-border" />
+
+					<li class="lead">
+						When click on <b>view product</b> it redirect to <b>seller products</b> page.
+					</li>
+
+					<img src="assets/images/18-Admin.png" class="img-border" />
+
+					
+
+					
+				</ul>
+			</div>
+
+		
+		</section>
+		<section id="seller">
+			<h4 class="section-title">Seller</h4>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						In this section seller request page functionality admin can view and modify seller request with searching to seller request.
+					</li>
+					<img src="assets/images/19-Admin.png" class="img-border" />
+					<li class="lead"> The EraShop real seller management  allows you to view a list of real seller, and allows modify, filter and search for them, and potentially access detailed information about individual sellers.</li>
+					<li class="lead">In this section real seller when click notification icon and allows to direct send notification to personal real seller.	</li>
+					<img src="assets/images/20-Admin.png" class="img-border" />
+					<li class="lead">
+						When click on <b>info</b> button and it redirect to <b>seller detail</b> page with seller personal detail, bank detail , order , products , transaction etc...
+					</li>
+					
+
+					<img src="assets/images/21-Admin.png" class="img-border" />
+					<li class="lead">The EraShop fake seller management  allows you to view a list of fake seller, and allows to add , modify, delete , filter and search for  fake seller and handle isLive switch them.</li>
+					
+					<img src="assets/images/22-Admin.png" class="img-border" />
+
+					
+				</ul>
+			</div>
+
+		
+		</section>
+		<section id="user">
+			<h4 class="section-title">Users</h4>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						The EraShop user management allows you to view a list of all users and allows to block/unblock users.
+					</li>
+					<img src="assets/images/23-Admin.png" class="img-border" />
+					<li class="lead">When click on <b>info</b> button and it redirect to <b>user detail</b> page with user personal detail and orders .</li>
+					<img src="assets/images/24-Admin.png" class="img-border" />
+					
+
+					
+				</ul>
+			</div>
+
+		
+		</section>
+		<section id="seller-withdraw">
+			<h4 class="section-title">Seller Withdraw</h4>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						In this section admin can handle <b>seller withdraw request</b> and pay them.
+					</li>
+					<img src="assets/images/25-Admin.png" class="img-border" />
+				</ul>
+			</div>
+
+		
+		</section>
+		<section id="admin-wallet">
+			<h4 class="section-title">Admin Wallet</h4>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						The EraShop admin wallet allows you to view a admin earning , earning with commission and daily , monthly and yearly earning with date filter.
+					</li>
+					<img src="assets/images/26-Admin.png" class="img-border" />
+				</ul>
+			</div>
+
+		
+		</section>
+		<section id="setting">
+			<h4 class="section-title">Setting</h4>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						The EraShop setting management allows you to view zegocloud setting , app setting and firebase notification setting allows to modify.
+					</li>
+					<li class="lead">Also admin can handle multiple setting with various switches to enable/disable them.</li>
+					<img src="assets/images/27-Admin.png" class="img-border" />
+				</ul>
+			</div>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						In this section of <b>payment setting</b> admin can handle razor pay , stripe pay and charges setting related to app.
+					</li>
+					<li class="lead">Also admin can handle <b>razor pay </b>, <b>stripe pay</b>  switch</li>
+					<img src="assets/images/28-Admin.png" class="img-border" />
+				</ul>
+			</div>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						In this section <b>withdraw setting</b> functionality allows you to add , modify , view and delete withdraw method.
+					</li>
+					<li>And also admin can handle multiple withdraw method with various switches to enable/disable them.</li>
+					<img src="assets/images/29-Admin.png" class="img-border" />
+				</ul>
+			</div>
+
+		
+		</section>
+		<section id="faq">
+			<h4 class="section-title">FAQ</h4>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						In this section <b>FAQ</b> admin can add new <b>FAQ</b> with edit and delete options.
+					</li>
+					
+					<img src="assets/images/30-Admin.png" class="img-border" />
+				</ul>
+			</div>
+			
+
+		
+		</section>
+		<section id="profile">
+			<h4 class="section-title">Admin Profile</h4>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						Here admin is able to change his own detalis
+					</li>
+					
+					<img src="assets/images/31-Admin.png" class="img-border" />
+				</ul>
+			</div>
+		
+		</section>
+		<section id="notification">
+			<h4 class="section-title">Notification</h4>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						To send notification to user open notification dialog from here.
+					</li>
+					
+					<img src="assets/images/32-Admin.png" class="img-border" />
+				</ul>
+			</div>
+			<div class="list-section">
+				<ul>
+					<li class="lead">
+						Then send notification to user with message,image and notification title.
+					</li>
+					
+					<img src="assets/images/33-Admin.png" class="img-border" />
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,929 @@
+<!-- Change App Name (Android) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>EraShop - Documentation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="theme-style" rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+    />
+
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "../../../connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "2223805407931076");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2223805407931076&amp;ev=PageView&amp;noscript=1"
+    /></noscript>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-88404643-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-88404643-1");
+    </script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="menu-bar sidenav-menubar">
+        <div class="menubar-icon">
+          <span class="first-line"></span>
+          <span class="middle-line"></span>
+          <span class="last-line"></span>
+        </div>
+      </div>
+      <div class="sidebar-top">
+        <div class="brand-logo">
+          <a href="">
+            <img src="../assets/images/logoEra.png  " class="me-2" style="margin-right: 20px;" alt="">
+            <h2 class="ms-2 logoText" style="color: #CA4A76 ;">EraShop</h2>
+          </a>
+        </div>
+      </div>
+
+      <div class="sidenav">
+        <div class="doc-sidebar col-md-2 col-12 order-0 d-none d-md-flex position-fixed" style="left:0;">
+  
+          <div id="doc-nav" class="doc-nav">
+            <nav id="doc-menu" class="doc-menu  sticky">
+              <span class="sidebar-heading">Main</span>
+              <a class="nav-link scrollto" href="#Introduction"> Introduction</a>
+              <a class="nav-link scrollto" href="#Prerequisites"> Prerequisites</a>
+              <a class="nav-link scrollto" href="#androidstudiowindows">Android Studio Windows
+                setup​</a>
+                <a class="nav-link scrollto" href="#setup-ios">Android Studio MacOS setup​</a>
+                <span class="sidebar-heading">FIREBASE</span>
+                
+                <a class="nav-link scrollto" href="#Firebase-Configuring"> Configure
+                  Firebase</a>
+                <a class="nav-link scrollto" href="#privateKey">Download Firebase Private Key</a>
+                <a class="nav-link scrollto" href="#addAndroidApp">Add Android App To Firebase</a>
+                <a class="nav-link scrollto" href="#addIosApp">Add IOS App In Firebase</a>
+                <a class="nav-link scrollto" href="#Google-Login-Configuration">Google
+                  Sign In
+                  Configuration</a>
+              <a class="nav-link scrollto" href="#Push-Notification-Cloud-Function"> Upload APNs
+              </a>
+             
+              <a class="nav-link scrollto" href="#Setup-Agora">Setup Zego Cloud</a>
+              
+              <span class="sidebar-heading">PROJECT CHANGE</span>
+              <a class="nav-link scrollto" href="#build-run">Extract The Project
+              </a>
+              <a class="nav-link scrollto" href="#setupbaseURLKey">Change baseURL And secretKey
+              </a>
+              <a class="nav-link scrollto" href="#changePackageName">Change Package Name
+              </a>
+              <a class="nav-link scrollto" href="#changeAppColor">Change App Color
+              </a>
+              <a class="nav-link scrollto" href="#changeAppIcon">Change App Icon
+              </a>
+              <a class="nav-link scrollto" href="#Change-App-Name">Change App Name
+              </a>
+              <a class="nav-link scrollto" href="#Build-DebugAPK">Build Debug APK
+              </a>
+              <a class="nav-link scrollto" href="#Release-APK">
+                Release APK
+              </a>
+              <a class="nav-link scrollto" href="#contact-us">Contact Us</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <section class="page-head">
+        <div class="menu-bar">
+          <div class="menu-bar-icon">
+            <span class="first-line"></span>
+            <span class="middle-line"></span>
+            <span class="last-line"></span>
+          </div>
+        </div>
+        <div class="page-head-inner">
+  
+          <div class="content-tabs ">
+            <div class="brand-logo logo-md">
+              <a href="">
+                <img src="./images/logoEra.png" class="me-2" style="margin-right: 20px;" alt="">
+                <h2 class="ms-2 logoText" style="color: #e60a57 ;">EraShop</h2>
+              </a>
+            </div>
+            <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a href="../index.html" class="nav-link ">Admin Panel</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="./flutterDocs.html" class="nav-link current">Flutter</a>
+              </li>
+  
+            </ul>
+  
+          </div>
+        </div>
+      </section>
+    </header>
+  
+    <main class="content-inner">
+      <section id="Introduction" class="doc-section">
+        <h2 class="section-title">Introduction</h2>
+        <div class="list-section">
+          <ul>
+            <li>
+              Thank you for choosing the EraShop app. We are pleased to have you with us. Enclosed is the documentation to help you set up and launch the app easily. Please read it carefully, as it
+              contains important information. If you need any assistance or have questions, our support team is just a message away.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="Prerequisites">
+        <div class="doc-section">
+          <h2 class="section-title">Prerequisites</h2>
+
+          <div class="list-section">
+  
+            <ul class="display-table">
+              <li>We utilized <b>Flutter version 3.16.8</b> along with the Dart<a href="https://docs.flutter.dev/release/archive?tab=windows" target="_blank">SDK</a></li>
+              <li>To modify this project, it's essential to ensure that Flutter and Dart are installed and properly configured on your computer.</li>
+             <li>If you have already installed and configured the Android SDK, the steps to install Flutter are as follows:</li>
+            </ul>
+
+            <ol class="order-list-type" style="margin-left: 33px;">
+              <li>Download the Flutter SDK from the official website and extract it.</li>
+              <li>Add the path to the previously extracted SDK to your PATH variable.</li>
+              <li>Run the <b>flutter doctor</b> tool to verify if everything is configured correctly.</li>
+            </ol>
+
+            <ul>
+              <li>For detailed instructions, please refer to the following documentation:<a href="https://flutter.dev/docs/get-started/install/">https://flutter.dev/docs/get-started/install/</a></li>
+            </ul>
+          </div>
+  
+        </div>
+      </section>
+  
+      <section id="androidstudiowindows">
+        <div class="doc-section">
+          <h2 class="section-title"> Android Studio Windows Setup
+          </h2>
+  
+          <div class="list-section">
+  
+            <ul>
+              <li>Download Android Studio from the official website:<a href="https://developer.android.com/studio/" target="_blank"
+                rel="noopener">https://developer.android.com/studio/</a></li>
+                <li>Access the Flutter SDK through:<a href="https://flutter.dev/docs/get-started/install" target="_blank"
+                  rel="noopener">https://flutter.dev/docs/get-started/install</a></li>
+                  <li>For further information on Android Studio, visit:<a href="https://developer.android.com/studio/intro/" target="_blank"
+                    rel="noopener">https://developer.android.com/studio/intro/</a></li>
+  
+
+              <h3>Step 1 : Get the Flutter SDK</h3>
+              <li>Please download the provided installation bundle to access the latest stable release of the Flutter SDK.</li>
+              <li>Upon downloading, extract the zip file and place the 'flutter' directory in your chosen installation directory for the Flutter SDK (e.g., C:\src\flutter). Avoid installing Flutter in directories such as C:\Program Files, as it may require elevated privileges.</li>
+
+              <h3>Step 2 : Update your path</h3>
+             
+               <li>To enable running Flutter commands in the regular Windows console, follow these steps to add Flutter to the PATH environment variable:</li>
+            
+            </ul>
+
+              <ol class="order-list-type" style="margin-left: 33px;">
+                <li>Open the Start menu and search for <b>'env'</b>, then select <b>'Edit environment variables for your account'</b>.</li>
+                <li>In the User variables section, check if there is an entry named Path.</li>
+                <li>If the Path entry already exists, append the full path to the flutter\bin directory using ; as a separator from existing values.</li>
+                <li>If the Path entry doesn’t exist, create a new user variable named Path and set its value to the full path to the flutter\bin directory.</li>
+                <li>Remember to close and reopen any existing console windows for these changes to take effect.</li>
+                <li>You are now prepared to run Flutter commands in the Flutter Console!</li>
+              </ol>
+
+
+
+              <h3>Step 3 : Run flutter doctor</h3>
+              <ul>
+                <li>From a console window with the Flutter directory added to the PATH (as described above), execute the following command to check for any platform dependencies that may be required to complete the setup:</li>
+              </ul>
+              <div className="row" style="background-color: black; border-radius: 10px; padding: 20px; color: #fff">
+                <div className="col-12">flutter doctor</div>
+              </div>
+              <ul>
+                <li>If any complications arise during the environment setup, kindly refer to our online resources for guidance. Please click the following link to access:<a href="https://flutter.dev/docs/get-started/install/windows" target="_blank"
+                  rel="noopener">Click Here</a></li>
+              </ul>
+          </div>
+  
+        </div>
+      </section>
+  
+      <section id="setup-ios">
+        <div class="doc-section">
+          <h2 class="section-title">Android Studio macOS​ setup​</h2>
+          <div class="list-section">
+
+            <ul>
+                <li>Download Android Studio from the official website:<a href="https://developer.android.com/studio/" target="_blank"
+                rel="noopener">https://developer.android.com/studio/</a></li>
+                <li>Download Xcode from the App Store:<a href="https://apps.apple.com/us/app/xcode/id497799835?mt=12" target="_blank"
+                  rel="noopener">https://apps.apple.com/us/app/xcode/id497799835?mt=12</a> .</li>
+                <li>Access the Flutter SDK through:<a href="https://flutter.dev/docs/get-started/install" target="_blank"
+                  rel="noopener">https://flutter.dev/docs/get-started/install</a></li>
+                <li>For further information on Android Studio, visit:<a href="https://developer.android.com/studio/intro/" target="_blank"
+                    rel="noopener">https://developer.android.com/studio/intro/</a></li>
+  
+
+              <h3>Step 1 : Get the Flutter SDK</h3>
+              <li>Please download the provided installation bundle to acquire the latest stable release of the Flutter SDK. </li>
+              <li>After downloading, extract the SDK by double-clicking on the downloaded file. Subsequently, copy the extracted folder and paste it into your desired location, such as Documents\flutter.</li>
+
+              <h3>Step 2 : Update your path</h3>
+             
+               <li>To update the PATH variable and access the "flutter" command from the terminal, follow these steps:</li>
+          
+            </ul>
+
+              <ol class="order-list-type" style="margin-left: 33px;">
+                <li>Open the terminal.</li>
+                <li>For updating the PATH variable for the current terminal window only, enter the command:</li>
+              <div className="row" style="background-color: black; border-radius: 10px; padding: 20px; color: #fff">
+                <div className="col-12">export PATH="$PATH:`pwd`/flutter/bin"
+                </div>
+              </div>
+
+              <li>To update the PATH variable permanently, open or create the .bash_profile file by entering:</li>
+              <div className="row" style="background-color: black; border-radius: 10px; padding: 20px; color: #fff">
+                <div className="col-12">sudo open -e $HOME/.bash_profile
+                </div>
+              </div>
+
+              <li>Append the following line to the .bash_profile file, placing it at the bottom:</li>
+              <div className="row" style="background-color: black; border-radius: 10px; padding: 20px; color: #fff">
+                <div className="col-12">export PATH="$PATH:[PATH_TO_FLUTTER_SDK_DIRECTORY]/flutter/bin"
+                </div>
+              </div>
+
+              <li>Replace [PATH_TO_FLUTTER_SDK_DIRECTORY] with the actual path to the Flutter SDK folder.</li>
+
+              <li>Refresh the PATH variables by running the command:</li>
+              <div className="row" style="background-color: black; border-radius: 10px; padding: 20px; color: #fff">
+                <div className="col-12">source $HOME/.bash_profile
+                </div>
+              </div>
+
+              <li>Verify that the SDK is successfully installed by running:</li>
+              <div className="row" style="background-color: black; border-radius: 10px; padding: 20px; color: #fff">
+                <div className="col-12">flutter doctor
+                </div>
+              </div>
+              </ol>
+
+              <ul>
+                <li>If the check list of Flutter SDK requirements is displayed, the SDK is successfully installed, and you can proceed with building Flutter apps.</li>
+                <li>For troubleshooting during environment setup on macOS, refer to our online resources<a href="https://flutter.dev/docs/get-started/install/windows" target="_blank"
+                  rel="noopener">Click Here</a></li>
+              </ul>
+
+          </div>
+        </div>
+      </section>
+  
+      <section id="Firebase-Configuring" class="doc-section">
+        <div class="doc-section">
+  
+          <h2 class="section-title">Configure Firebase</h2>
+  
+            <div class="list-section">
+              <ul>
+                <li>Please navigate to your Firebase project, which you may have created while following the backend documentation. If you haven't created one yet, please follow the steps below to set up a project:</li>
+              </ul>
+              
+              <ol class="order-list-type" style="margin-left: 33px;">
+                <li>Begin by visiting the Firebase website through the following link:<a href="https://firebase.google.com/" target="_blank">
+                  https://firebase.google.com/</a></li>
+                  <li>If you do not already have a Firebase account, kindly sign up for one. Otherwise, proceed to sign in with your existing account credentials.</li>
+                  <img width="876" height="493" src="./images/firebase1.png" />
+              
+                  <li>Upon successful login, you will be directed to the Firebase Console. Click on the <b>"Add project"</b> button to initiate the creation of a new project.</li>
+                  <img width="876" height="493" src="./images/firebase2.png" />
+
+                  <li>Enter a <b>suitable name for your project</b> and configure your preferred options for Firebase Analytics and Google Analytics. Subsequently, click on the <b>"Continue"</b> button.</li>
+                  <img width="876" height="493" src="./images/firebase3.png" />
+                  <img width="876" height="493" src="./images/firebase4.png" />
+
+                  <li>First, select the default Firebase account, then proceed to create the project.</li>
+                  <img width="876" height="493" src="./images/firebase5.png" />
+                  <img width="876" height="493" src="./images/firebase6.png" />
+              </ol>
+              
+
+              
+            </div>
+        </div>
+      </section>
+
+      <section id="privateKey" class="doc-section">
+        <div class="doc-section">
+  
+          <h2 class="section-title">Download Firebase Private Key</h2>
+  
+            <div class="list-section">
+              <ul>
+                <li>Here's a step-by-step guide to <b>downloading your Firebase private key</b> in a professional manner:</li>
+              </ul>
+              
+              <ol class="order-list-type" style="margin-left: 33px;">
+                <li>If you have multiple projects, <b>select the Firebase project</b> for which you need the private key.</li>
+                <li>Click on the gear icon (Settings) next to <b>"Project Overview"</b> on the top left corner of the Firebase Console.</li>
+                <li>In the project settings, navigate to the <b>"Service Accounts"</b> tab.</li>
+                <li>Scroll down to the <b>"Firebase Admin SDK"</b> section.</li>
+                <li>Click on the <b>"Generate New Private Key"</b> button.                </li>
+                <li>A prompt will appear asking you to confirm your action.                </li>
+                <li>Once downloaded, <b>store the JSON file containing the private key</b> securely on your local machine.</li>
+                <img width="876" height="493" src="./images/privateKey1.png" />
+
+                <li>Please <b>update the downloaded private key file</b> in the <b>'Private Key' section of the Firebase Notification settings</b>.</li>
+                <img width="876" height="493" src="./images/privateKey2.png" />
+              </ol>
+            </div>
+        </div>
+      </section>
+
+      <section id="addAndroidApp" class="doc-section">
+        <h4 class="section-title">Add Android App To Firebase</h4>
+        <div class="list-section">
+          <ul>
+            <li>In the next step, we have to <b>choose the platform</b> to add Firebase to our application. Click on Android.</li>
+            <li>The platform can be Android, iOS, Web etc..</li>
+            <img width="876" height="493" src="./images/firebase7.png" />
+
+            <li>Your package name is generally the <b>applicationId</b> in your <b>build.gradle (app-level)</b> file</li>
+            <li>Refer to the<a href="./getSHA-key.html" target="_blank">Page</a>for guidance on utilizing keytool <b>to obtain the SHA-1</b> hash of your signing certificate.</li>
+            <li>Add your <b>applicationid</b> in the first field and <b>SHA-1</b> to the third field as shown in the image below.</li>
+            <img width="876" height="493" src="./images/firebase8.png" />
+
+            <li><b>Download the google-services.json file</b> & place it in your project's app root directory.</li>
+            <img width="876" height="493" src="./images/firebase9.png" />
+            <img width="876" height="493" src="./images/firebasesetupJson.png" />
+
+            <li>Back in the Firebase console-setup workflow, click <b>Next</b> to skip the remaining steps and then finish and complete</li>
+            <img width="876" height="493" src="./images/android_firbase_4.png" />
+          </ul>
+
+          <h3>Step 1 : Enter SHA Key in firebase console</h3>
+       
+            <ul>
+              <li>
+                If you fail to provide the SHA-1 key in the Firebase project, functionalities such as phone login and Google login will be impaired.</li> 
+                <li>It is essential to add your SHA-1 keys for both debug and live modes to ensure seamless operation.</li>
+
+              <img width="876" height="493" src="./images/changesha1.png" />
+              <img width="876" height="493" src="./images/changesha2.png" />
+            </ul>
+        </div>
+      </section>
+
+      <section id="addIosApp" class="doc-section">
+        <div class="list-section">
+          <div class="list-section">
+            <h4 class="section-title">Add IOS App In Firebase              </h4>
+              <ul>
+              <li>we have to <b>choose the platform</b> to add Firebase to our application. Click on iOS.</li>
+              <img width="876" height="493" src="./images/IOSScreenshot_1.png" />
+
+              <li>On the next screen, enter your iOS bundle ID & App nickname and click on Register App. You can find your <b>bundle ID</b> in the General tab for your app's primary target in Xcode. If specified, the app nickname will be used throughout the Firebase console to represent this app. Nicknames aren't visible to users.</li>
+              <img width="876" height="493" src="./images/IOSScreenshot_2.png" />
+
+              <li><b>Download the GoogleService-Info.plist file</b> & move the GoogleService-Info.plist file you just downloaded into the root of your Xcode project and add it to all targets.</li>
+              <img width="876" height="493" src="./images/IOSScreenshot_3.png" />
+              <img width="876" height="493" src="./images/IOSScreenshot_4.png" />
+
+              <li>Back in the Firebase console-setup workflow, click <b>Next</b> to skip the remaining steps and then finish and complete</li>
+              <img width="876" height="493" src="./images/android_firbase_4.png" />
+
+              <h3>Step 1 : Enter SHA Key in firebase console</h3>
+             
+             
+                  <li>
+                    If you fail to provide the SHA-1 key in the Firebase project, functionalities such as phone login and Google login will be impaired.</li> 
+                    <li>It is essential to add your SHA-1 keys for both debug and live modes to ensure seamless operation.</li>
+    
+                  <img width="876" height="493" src="./images/changesha1.png" />
+                  <img width="876" height="493" src="./images/changesha2.png" />
+              
+            </ul>
+          </div>
+      </section>
+
+      <section id="Google-Login-Configuration" class="doc-section">
+        <h2 class="section-title">Google Sign In Configuration </h2>
+        <div class="section-block">
+  
+  
+          <div class="list-section">
+            <ul>
+              <li>Navigate to the <b>"Authentication"</b> section and select the <b>"Sign-in method"</b> tab.</li>
+              <img src="./images/Screenshot_13.png">
+
+              <li class="lead">Click to Enable </li>
+              <li class="lead">Select your support email and save</li>
+              <img src="./images/G0.png">
+
+              <li>Google sign-in method has been successfully enabled.</li>
+              <img src="./images/google_3.png">
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <section id="Push-Notification-Cloud-Function">
+        <div class="doc-section">
+          <div class="list-section">
+            <h4 id="cutomization" class="section-title"> Create APNs Auth Key For Push Notification</h4>
+            <ol class="order-list-type" style="margin-left: 33px;">
+              <li>Navigate to <a href="https://developer.apple.com/account" target="_blank">https://developer.apple.com/account</a>.</li>
+              <li>Log in using your Apple developer credentials.</li>
+              <li>Obtain a provider certificate from your developer account. This can be found in the <b>"Certificates"</b> section, as depicted in the image below.</li>
+              <li>Select the <b>"Certificate, IDs & Profiles"</b> tab.</li>
+              <img src="./images/apn1.png" />
+
+              <li>Select the <b>"Keys"</b> tab.</li>
+              <li>Click on the <b>"+"</b> button.</li>
+              <img src="./images/apn2.png" />
+
+              <li>A key can be generated which gives the FCM full access over the Apple Push Notification service (APNs). On the "Keys" menu item, register a new key. The name of the key can be anything, however you must ensure the APNs service is enabled.</li>
+              <img src="./images/apn3.png" />
+              <img src="./images/apn4.png" />
+
+              <li>Click "Continue" & then "Save". Once saved, you will be presented with a screen displaying the private "Key ID" & the ability to download the key. Copy the ID, and download the file to your local machine.</li>
+              <img src="./images/apn5.png" />
+
+              <li>Copy the Key ID and download the file.</li>
+              <li>The file & Key ID can now be added to your Firebase Project. On the Firebase Console, navigate to the "Project settings" and select the "Cloud Messaging" tab. Select your iOS application under the "iOS app configuration" heading.s</li>
+              <img src="./images/apn6.png" />
+              <img src="./images/apn7.png" />
+
+              <li>Upload the downloaded file and enter the Key & Team IDs;</li>
+              <img src="./images/apn8.png" />
+            </ol>
+          </div>  
+        </div>
+      </section>
+  
+      <section id="Setup-Agora" class="doc-section">
+        <h2 class="section-title">SetUp Zego Cloud</h2>
+        <div class="list-section">
+          <ul>
+            <li>Open the Zego Cloud console<a href="https://console.zegocloud.com/account/signup
+              " target="_blank">Click Here</a></li>
+              <li>Generate a Zego App ID.</li>
+            <img src="./images/zigo1.png">
+  
+           
+            <li>To use the live-streaming function, you must generate a secret key in the Zego Cloud console.            </li>
+            <img src="./images/zigo2.png" />
+
+
+              <li>
+                Enter the Zego Cloud App ID and Zego Cloud App Sign In details in the admin panel under the settings section.</li>
+            <img src="./images/zigo3.png" />
+          </ul>
+        </div>
+  
+      </section>
+      
+      <section id="build-run">
+        <div class="doc-section">
+          <div class="list-section">
+            <ul>
+  
+              <h2 class="section-title">Extract The Project
+              </h2>
+
+              <li>To import the app, open Android Studio and import or open the template. Ensure that you wait for all processes, including the Gradle Build, to complete before proceeding to the next step.</li>
+              <img src="./images/Screenshot_1.png">
+
+             
+                <li>To install the Flutter and Dart plugins, follow these steps:</li>
+            </ul>
+              
+              <ol class="order-list-type" style="margin-left: 33px;">
+                <li>Click on the settings button located in the corner.</li>
+                <li>A pop-up will appear. Select "Plugins".</li>
+                <li>In the search bar within the pop-up, enter the names of the plugins you wish to install (as shown in the image below).</li>
+              </ol>
+              
+              <div class="image-box"><a href="./images/installpluges.png" target="_blank">
+                  <img src="./images/installpluges.png"></a>
+              </div>
+            <ul>
+                <li>Click on <b>"Open"</b> and open your project.</li>  
+              <div class="image-box"><a href="./images/Screenshot_2.png" target="_blank"><img
+                    src="./images/Screenshot_2.png"></a>
+              </div>
+
+              <li>A pop-up will appear; select your project and then click on the <b>"Ok"</b> button.              </li>
+              <div class="image-box"><a href="./images/Screenshot_3.png" target="_blank"><img
+                    src="./images/Screenshot_3.png"></a>
+              </div>
+
+
+              <li>
+                In some cases, the Gradle Build may fail. If additional components are required, Android Studio will prompt you to download them in the 'messages' tab. Simply follow the instructions provided to install and download the necessary additional components.</li>
+            </ul>
+          </div>
+  
+        </div>
+      </section>
+  
+      <section id="setupbaseURLKey">
+        <div class="doc-section">
+          <h2 class="section-title mb-3">Change baseURL And secretKey</h2>
+  
+          <div class="list-section">
+            <ul>
+              <li>Change baseURL and secretkey in <b>lib > utiles > app_url.dart</b> as shown in the
+                image below.</li>
+  
+              <li>This <b>baseURL and secretkey</b> should be <b>consistently applied</b> across our<b><a
+                    href="../index.html#adminPanelSetUp">back-end</a></b>,<b><a
+                    href="../index.html#adminPanelSetUp">front-end</a></b>and<b><a
+                    href="#setupbaseURLKey">app-code</a></b>to
+                ensure uniform
+                protection.
+              </li>
+  
+              <div class="image-box"><a href="./images/setupKeyBaseURlFultter.png" target="_blank"><img
+                    src="./images/setupKeyBaseURlFultter.png"></a>
+              </div>
+  
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <section id="changePackageName">
+        <div class="doc-section">
+          <h2 class="section-title mb-3">Change Package Name</h2>
+  
+          <div class="list-section">
+            <ul>
+              <li><b>Android</b>
+                <ul>
+                  <li>Navigate to the <b>"android/app"</b> directory and locate the <b>"build.gradle"</b> file.</li>
+                  <li>Within this file, update the <b>"applicationId"</b> and its corresponding dependencies as necessary</li>
+                  <img src="./images/android_package_name.png" alt="" class="img-fluid">
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>  <b>IOS</b></li>
+            </ul>
+                <ul style="margin-left: 20px;">
+                  <li>Please initiate a right-click on the iOS directory, followed by selecting <b>"Flutter"</b> and then <b>"Open iOS module in Xcode"</b> to proceed further.</li>
+                  <img src="./images/iOS_package_name_1.png" alt="" class="img-fluid">
+                  <li>After successfully opening the project in Xcode, proceed to the following steps:                  </li>
+                </ul>
+
+                <ol class="order-list-type" style="margin-left: 33px;">
+                 <li>Navigate to <b>"Runner"</b> > <b>"Signing & Capabilities"</b>.                </li>
+                 <li>Modify the <b>bundle identifier</b> according to your requirements.</li>
+                 <li>Save the changes, and the process is complete.                 </li>
+                 <img src="./images/iOS_package_name_2.png" alt="" class="img-fluid">
+                </ol>
+          </div>
+        </div>
+      </section>
+  
+      <section id="changeAppColor">
+        <div class="doc-section">
+          <h2 class="section-title mb-3">Change App Color</h2>
+  
+          <div class="list-section">
+            <ul>
+              <li>Go to your project <b>lib > utils > color_res.dart</b> as shown in the below image.</li>
+              <img src="./images/change_app_color.png" alt="">
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <section id="changeAppIcon">
+        <div class="doc-section">
+          <h2 class="section-title mb-3">Change App Icon</h2>
+  
+          <div class="list-section">
+            <ul>
+              <li>To generate icons of various sizes for both iOS and Android platforms,<a href="https://www.appicon.co/" target="_blank">visit</a></li>
+              <li>Upload the icon image, select the desired options for iPhone and Android compatibility, and click on <b>"Generate"</b>. This website will efficiently produce icons in multiple sizes for both platforms simultaneously.</li>
+              <img src="./images/change_icon_1.png" alt="">
+
+              <li>Upon completion, the website will download a ZIP file named <b>"AppIcons"</b>, containing folders named <b>"android"</b> and <b>"Assets.xcassets"</b>, along with images suitable for the App Store and Google Play Store. These assets can be directly uploaded as icons in both app stores.</li>
+              <img src="./images/change_icon_2.png" alt="">
+              <li>Please open your project in Android Studio.              </li>
+
+
+
+              <br>
+              <li><b>Android</b>
+                <ul>
+                  <li>Navigate to the <b>"android/app/src/main/res"</b> directory in your project. Right-click on the <b>"res"</b> folder and select <b>"open in Finder"</b>. Once in Finder, delete all the existing mipmap folders. Then, paste the mipmap folders from the AppIcon/android directory that you have downloaded.</li>
+                </ul>
+              </li>
+              <img src="./images/change_icon_4.png" alt="">
+
+              <li><b>IOS</b>
+                <ul>
+                  <li>
+                    Navigate to the <b>"ios/Runner</b> directory and locate the <b>".xcassets"</b> file. Right-click on the <b>"Runner"</b> folder and select <b>"open in Finder"</b>. Once in Finder, delete the <b>"Assets.xcassets"</b> folder. Then, paste the <b>"Assets.xcassets"</b> folder from the <b>"AppIcon"</b> directory that you have downloaded.</li>
+                </ul>
+              </li>
+              <img src="./images/change_icon_3.png" alt="">
+
+              <li>After replacing the images in the Android and iOS folders manually, proceed to <b>"lib/main.dart"</b> and run the Flutter project using the following command in the Flutter console.</li>
+              <div className="row" style="background-color: black; border-radius: 10px; padding: 20px; color: #fff">
+                <div className="col-12">flutter run</div>
+              </div>
+              <img src="./images/change_icon_5.png" alt="">
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <section id="Change-App-Name">
+        <div class="doc-section">
+          <h2 class="mb-3 section-title">Change App Name </h2>
+          <div class="list-section">
+            <ul>
+              <li><b>Andriod</b>
+                <ul>
+                  <li>Navigate to <b>"android/app/src/main/AndroidManifest.xml"</b> and make the changes as depicted in the provided image.</li>
+                  <div class="image-box"><a href="./images/change_app_name.png" target="_blank"><img
+                    src="./images/change_app_name.png"></a>
+                  </div>
+                </ul>
+              </li>
+
+              
+              <li><b>IOS</b>
+                <ul>
+                  <li>Please right-click on the <b>"iOS"</b> directory, then navigate to <b>"Runner"</b>, and select <b>"info.plist"</b>. Finally, open the iOS module in Xcode.</li>
+                  <div class="image-box"><a href="./images/change_app_name_ios.png" target="_blank"><img
+                    src="./images/change_app_name_ios.png"></a>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+  
+        </div>
+      </section>
+  
+      <section id="Build-DebugAPK">
+        <div class="doc-section">
+          <div class="list-section">
+  
+              <h2 id="cutomization" class="section-title">Build Debug
+                APK
+              </h2>
+
+              <ul style="margin-left: 20px;">
+                <li>To generate <b>APK (Application Package File)</b> for distribution and installation on Android devices, Flutter provides a straightforward method using the <b>"flutter build apk"</b> command. Below, we outline the steps involved in building APK files for Android using Flutter.</li>
+              </ul>
+
+              <ol class="order-list-type" style="margin-left: 63px;">
+                <li>Navigate to your project location.</li>
+                <li>Access the build options by following this path: <b>"Build"</b> > <b>"Flutter"</b> > <b>"Build APK"</b>.</li>
+                <img src="./images/buildFulter.png">
+              </ol>
+      
+          </div>
+  
+        </div>
+      </section>
+  
+      <section id="Release-APK">
+        <div class="doc-section">
+          <div class="list-section">
+            <ul>
+  
+              <h2 class="section-title" id="cutomization">Release APK
+              </h2>
+
+              <li>Execute the following command: <b>"flutter build apk --release"</b>, as demonstrated in the image below.</li>
+              <div className="row" style="background-color: black; border-radius: 10px; padding: 20px; color: #fff">
+                <div className="col-12">flutter build apk --release</div>
+              </div>
+
+              <li>Once the <b>APK has been successfully generated</b>, it will be automatically saved to the specified destination, as illustrated in the image below.</li>
+              <img src="./images/fluterBuildPath.png" alt="logo">
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <div class="blog-section contact-blog space-start" id="contact-us">
+        <div class="contact-blog-inner">
+          <h2 class="section-title mb-4">
+            <fontsninja-text id="fontsninja-text-51" class="fontsninja-family-1935">Want to talk with
+              us?</fontsninja-text>
+          </h2>
+          <p><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94">
+              </path>
+            </svg>
+            <fontsninja-text id="fontsninja-text-54" class="fontsninja-family-1931">Email
+              <a href="mailto:incodeslab@gmail.com">
+                : incodeslab@gmail.com
+              </a>
+            </fontsninja-text>
+          </p>
+          <p>
+            <span><fontsninja-text id="fontsninja-text-66" class="fontsninja-family-1931">
+              </fontsninja-text>
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill-rule="nonzero"
+                    d="M7.253 18.494l.724.423A7.953 7.953 0 0 0 12 20a8 8 0 1 0-8-8c0 1.436.377 2.813 1.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 0 1-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 0 0 .367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 0 1 .378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 0 1-.21.302 2.378 2.378 0 0 1-.33.288 3.71 3.71 0 0 1-.125.09 5.024 5.024 0 0 1-.383.22 1.99 1.99 0 0 1-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 0 1-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 0 1 6.9 9.62a2.729 2.729 0 0 1 .564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 0 1 .371-.1z">
+                  </path>
+                </g>
+              </svg><fontsninja-text id="fontsninja-text-66" class="fontsninja-family-1931">
+                Whatsapp :
+              </fontsninja-text></span>
+            <a href="https://web.whatsapp.com/send?phone=9909515320" target="_blank">
+              <fontsninja-text id="fontsninja-text-71" class="fontsninja-family-1933">
+                +91 9909515320</fontsninja-text>
+            </a>
+          </p>
+  
+          <div class="blog-1"></div>
+        </div>
+      </div>
+    </main>
+  
+    <script type="text/javascript" src="./plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="./plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="./plugins/stickyfill/dist/stickyfill.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>>
+  
+    <script>
+  
+  
+  
+      const closes = () => {
+        $(".openImages").removeClass("fadeIn_")
+        $(".openImages").addClass("fadeOut_")
+  
+      }
+  
+  
+      // Open Image
+      var g = document.getElementsByClassName('myImage');
+      for (var i = 0, len = g.length; i < len; i++) {
+  
+        (function (idx) {
+          g[i].onclick = function () {
+  
+            if (idx == (parseInt(g.length) - 1)) {
+              $("#next").addClass("d-none")
+            }
+            if (idx == 0) {
+              $("#pre").addClass("d-none")
+            }
+  
+            $("#next").attr("data-num1", idx)
+            $("#pre").attr("data-num2", idx)
+  
+            $(".openImages").toggleClass("fadeIn_ fadeOut_")
+            document.getElementById("showImg").src = g[idx].src
+  
+          }
+        })(i);
+  
+  
+  
+      }
+      // Image Change Next
+      const next = () => {
+  
+        var a = $("#next").attr("data-num1")
+  
+        const num = parseInt(a) + parseInt(1)
+        $("#next").attr("data-num1", num)
+        $("#pre").attr("data-num2", num)
+        $("#pre").removeClass("d-none")
+  
+        if (num == (parseInt(g.length) - 1)) {
+          $("#next").addClass("d-none")
+        }
+  
+  
+  
+        document.getElementById("showImg").src = g[num].src
+  
+        $("#mainPage").addClass(" animate__animated animate__fadeInRight")
+        setTimeout(() => {
+          $("#mainPage").removeClass(" animate__animated animate__fadeInRight")
+        }, 300);
+      }
+  
+      // Image Change Previous
+      const pre = () => {
+  
+        var a = $("#pre").attr("data-num2")
+  
+        const num = parseInt(a) - parseInt(1)
+        $("#next").attr("data-num1", num)
+        $("#pre").attr("data-num2", num)
+        $("#next").removeClass("d-none")
+  
+        if (num == -1 || num == 0) {
+  
+          $("#pre").addClass("d-none")
+        }
+  
+  
+        document.getElementById("showImg").src = g[num].src
+  
+        $("#mainPage").addClass(" animate__animated animate__fadeInLeft")
+        setTimeout(() => {
+          $("#mainPage").removeClass(" animate__animated animate__fadeInLeft")
+        }, 300);
+  
+  
+      }
+  
+      document.onkeydown = function (event) {
+  
+        if (event.key == "ArrowRight") {
+          var a = $("#next").attr("data-num1")
+          const num = parseInt(a) + parseInt(1)
+          if (num != (parseInt(g.length))) {
+            next()
+          }
+        } else if (event.key == "ArrowLeft") {
+          var a = $("#next").attr("data-num1")
+          const num = parseInt(a) + parseInt(1)
+          if (num != 1) {
+            pre()
+  
+          }
+        } else if (event.key == "Escape") {
+          closes();
+        }
+      }
+  
+    </script>
+  
+  </body>
+</html>
